@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'main-font';
+    src: url('Montserrat-VariableFont_wght.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'main-font';
+}
+.container {
+    padding: 10px 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+.share {
+    position: absolute;
+    right: 20px;
+}
+.share i {
+    font-size: 30px;
+    color: black;
+}
+.logo{
+    margin: 50px auto;
+    width: fit-content;
+}
+.logo img{
+    width: 150px;
+}
+.lines{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -5;
+}
+.lines div{
+    width: 150%;
+    height: 15px;
+    background-color: black;
+    margin-bottom: 40px;
+    transform: rotate(45deg) translateX(-160px);
+}
+
+.box > div:not(.location){
+    width: 100%;
+    height: 80px;
+    background-color: #b5955a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+.box>div:not(.location) i{
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    color: black;
+    font-size: 25px;
+}
+.box>div:not(.location) p {
+    margin: 0 ;
+    display: inline-block;
+    font-size: 25px;
+}
+.box div.location {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box div.location img{
+    width: 100%;
+    border-radius: 30px;
+    margin: auto;
+    transition: 0.5s;
+}
+.box div.location::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(black, transparent);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.box div.location::after {
+    content: 'Our location';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 25px;
+    color: white;
+}
