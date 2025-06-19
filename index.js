@@ -18,9 +18,10 @@ for (let i = 0; i < websites.length; i++){
     }
 }
 let shared = {
-    'title': 'White Tex',
-    'url': 'https://www.facebook.com/'
-}
+    title: "White Tex",
+    text: 'Share our website to someone else !',
+    url: "https://omarso7.github.io/White_Tex/",
+};
 shareBtn.onclick = function () {
     navigator.share(shared);
 }
